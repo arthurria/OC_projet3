@@ -1,0 +1,79 @@
+main#main2{
+	background: $bg-menu2;
+
+	h2{
+		font-family: 'Croissant One';
+		font-size: 2em;
+		margin: 0px;
+		padding: 0px;
+		font-weight: normal;
+		@include gradient($txt-menu2, #8F5BFE);
+	}
+
+	h3{
+		flex: 4;	
+	}
+
+	svg{
+		flex: 4;
+		width: 332pt;
+		height: 18pt;
+		&#part1{ fill: $sc1-menu2; }
+		&#part2{ fill: $sc2-menu2; }
+		&#part3{ fill: $sc3-menu2; }
+	}
+
+	h3, p{
+		font-family: 'Cambria';
+		font-size: 1.2em;
+	}
+
+	h3{
+		&#part1{ color: $sc1-menu2; }
+		&#part2{ color: $sc2-menu2; }
+		&#part3{ color: $sc3-menu2; }
+	}
+
+	.line{
+		margin-bottom: 1em;
+		&--part1{ color: $sc1-menu2; }
+		&--part2{ color: $sc2-menu2; }
+		&--part3{ color: $sc3-menu2; }
+	}
+
+
+	hr{
+  	  width: 30%;
+      border: 4px solid $txt-menu1;
+      border-radius: 10px;
+      margin: inherit;
+	}
+	
+	p:nth-of-type(2) {
+ 	 	font-size: 1.5em;
+	}
+
+	.sub{
+		&--color1{
+			background: $sc1-menu2;
+		}
+		&--color2{
+			background: $sc2-menu2;
+		}
+		&--color3{
+			background: $sc3-menu2;
+		}
+	}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px)
+{
+  main#main2{
+  	svg{
+  	}
+  }
+}
+
+
+
+

@@ -1,0 +1,65 @@
+main#main1{
+	color: $txt-menu1;
+	background: $bg-menu1;
+
+	h2{
+		font-family: 'Devonshire';
+		font-size: 3em;
+		margin: 0px;
+		padding: 0px;
+		font-weight: normal;
+	}
+
+	h3, p{
+		font-family: 'Segoe';
+	}
+
+	.line{
+		margin-bottom: 1em;
+	}
+	
+	p:nth-of-type(2) {
+ 	 	font-weight: bold;
+	}
+
+	.last_txt{
+		margin-top: 70px;
+		img{
+			transform: translate(0,8px);
+			width: 50px;
+			margin-right: 10px;
+		}	
+		p{
+			font-family: 'Devonshire';
+			font-size: 2.5em;
+		}
+	}
+
+	h3{
+		flex: 3;	
+	}
+
+	svg{
+		flex: 4;
+	}
+
+	.title{
+	}
+
+	.sub{
+		background: $txt-menu1;
+	}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px)
+{
+  main#main1 {
+  	svg{
+  		height: 12pt;
+  	}
+  }
+}
+
+
+
+

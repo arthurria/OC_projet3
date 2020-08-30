@@ -1,0 +1,68 @@
+main#main3{
+	background: $bg-menu3b;
+
+	h2{
+		font-family: 'Croissant One';
+		font-size: 3em;
+		margin: 0px;
+		padding: 0px;
+		font-weight: normal;
+		@include gradient($txt-menu3, #8F5BFE);
+	}
+	h3{
+		flex: 2;	
+	}
+
+	svg{
+		flex: 2;
+		width: 332pt;
+		height: 18pt;
+		&#part1{ fill: $sc1-menu3; }
+		&#part2{ fill: $sc2-menu3; }
+		&#part3{ fill: $sc3-menu3; }
+	}
+
+	h3, p{
+		font-family: 'Cambria';
+		font-size: 1.2em;
+	}
+
+	.line{
+		margin-bottom: 1em;
+	}
+
+	.moment{
+		margin-top: 3em;
+		margin-bottom: 1em;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	hr{
+  	  width: 30%;
+      border: 4px solid $txt-menu1;
+      border-radius: 10px;
+      margin: inherit;
+	}
+	
+	p:nth-of-type(2) {
+ 	 	font-size: 1.5em;
+	}
+
+	svg{
+			
+	}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px)
+{
+  main#main2{
+  	svg{
+  	}
+  }
+}
+
+
+
+
