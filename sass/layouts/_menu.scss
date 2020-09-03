@@ -17,21 +17,29 @@ main{
   align-items: center;
 }
  
-  .sub{
-    content: '';
-    margin-top: -15px;
-    margin-bottom: 20px;
-    width: 3px;
-    height: 3px;
-    visibility: hidden;
-    transform-origin: left;
+  .title{
+    margin-left: 50px;
+    margin-right: 50px;
   }
+  
+ 
 
   .moment{
     margin-top: 3em;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+     .sub{
+      content: '';
+      margin-top: -15px;
+      margin-bottom: 20px;
+      width: 3px;
+      height: 3px;
+      visibility: hidden;
+      transform-origin: left;
+    }
+
     &:hover .sub{
       visibility: visible;
       animation: underline 0.6s forwards;

@@ -2,6 +2,10 @@ main#main1{
 	color: $txt-menu1;
 	background: $bg-menu1;
 
+	#svg_note{
+		margin: auto;
+	}
+
 	h2{
 		font-family: 'Devonshire';
 		font-size: 3em;

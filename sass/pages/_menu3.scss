@@ -50,8 +50,17 @@ main#main3{
  	 	font-size: 1.5em;
 	}
 
-	svg{
-			
+
+	.sub{
+		&--color1{
+			background: $sc1-menu3;
+		}
+		&--color2{
+			background: $sc2-menu3;
+		}
+		&--color3{
+			background: $sc3-menu3;
+		}
 	}
 }
 

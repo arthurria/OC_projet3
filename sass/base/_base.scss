@@ -1,45 +1,3 @@
-@mixin gradient($color1, $colorb){
-  background: linear-gradient(to right, $color1 0%, $colorb 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
-
-@keyframes wave {
-  0%, 60%, 100% {
-    transform: initial;
-  }
-
-  30% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes underline {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 100%;
-    }
-}
 
 body{
     width: 80%;
@@ -196,8 +154,10 @@ header{
 }
 
 .soon{
-  font-family: 'Breul thin';
-  font-size: 2em;
+  .soon_txt{
+    font-size: 1.5em;
+    font-family: 'Breul thin';
+  }
   width: 400px;
   border-radius: 15px 15px 15px 15px;
   padding: 0.2em;
@@ -213,20 +173,21 @@ header{
         border-radius: 50%;
         margin-left: 3px;
         background: $color-yellow;
-        animation: wave 1.3s linear infinite;
+        animation: wave 1.5s linear infinite;
+  }
 
-        &:nth-child(1) {
+      .dot1{
           margin-left: 10px;
         }
 
-        &:nth-child(2) {
-          animation-delay: -1.1s;
+        .dot2{
+          animation-delay: 0.3s;
         }
 
-        &:nth-child(3) {
-          animation-delay: -0.9s;
+        .dot3{
+          animation-delay: 0.5s;
+
         }
-  }
 }
 
 footer{
@@ -257,6 +218,11 @@ footer{
   }
 }
 
+.mentions{
+  text-align: justify;
+  margin-bottom: 20vh;
+}
+
 
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px)
@@ -281,7 +247,7 @@ footer{
 }
 
 .soon{
-  font-size: 2.5em;
+  font-size: 1.5em;
   width: 40%;
   padding: 0.3em;
 }
@@ -293,6 +259,11 @@ footer{
     padding: 1em;
   }
 }
+
+.mentions{
+  padding: 40px;
+}
+
 
 }
 
